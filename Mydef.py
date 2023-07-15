@@ -153,3 +153,11 @@ def brain(list):
             start_col_n = index % size
     return 
     
+def showMatrixChose(size):
+    for item in range((int(size * size))):
+            print("|{}|{}".format(item + 1,'\t'), end='')
+            if (item + 1) % size == 0:
+                if item + 1 == 1:
+                    continue
+                print('\n', end='')
+                # print('-'* int(size) * 3) 
